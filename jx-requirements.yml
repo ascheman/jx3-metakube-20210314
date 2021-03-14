@@ -20,11 +20,11 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: "metakube.aschemann.net"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
-      email: ""
+      email: "gerd@aschemann.net"
       enabled: false
       production: false
   repository: bucketrepo
