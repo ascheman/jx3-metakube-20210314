@@ -32,17 +32,21 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: ascheman
+    repository: jx3-metakube-20210314
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: metakube.aschemann.net
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: ""
+      email: gerd@aschemann.net
       enabled: false
       production: false
+  pipelineUser:
+    username: ascheman
   repository: bucketrepo
   secretStorage: local
   vault: {}
