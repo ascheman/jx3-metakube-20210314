@@ -1,0 +1,51 @@
+# Source: jxboot-helmfile-resources/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-13T12:44:22Z"
+  deletionTimestamp: null
+  name: 'jxboot-helmfile-resources-1.0.40'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.40
+      sha: 4bfc7af7cd2fe28dd6ec5664510c7183426bbf1f
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 85782ccf1f575c37fccdb0d8d111ce1540f466eb
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: flags
+
+        Signed-off-by: James Strachan <james.strachan@gmail.com>
+      sha: ebbb21f42af36ff17ea28b1053e3b8e5056a7ba9
+  gitHttpUrl: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
+  gitOwner: jenkins-x-charts
+  gitRepository: jxboot-helmfile-resources
+  name: 'jxboot-helmfile-resources'
+  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.40
+  version: v1.0.40
+status: {}
